@@ -1,16 +1,18 @@
 <script lang="ts">
-        import axios from "axios";
+    import axios from "axios";
     let toDoItem: string = "";
     let dueDate: string = "";
-    let isCompleted:boolean = false;
+    let isCompleted: boolean = false;
 
     async function submitForm() {
-        const result = await axios.post("http://localhost:3000/todolist", {
-            toDoItem: toDoItem,
-            dueDate: dueDate,
-            isCompleted:isCompleted,
-        });
-        console.log(result);
+        if (toDoItem && dueDate) {
+            const result = await axios.post("http://localhost:3000/todolist", {
+                toDoItem: toDoItem,
+                dueDate: dueDate,
+                isCompleted: isCompleted,
+            });
+            console.log(result);
+        }
     }
 </script>
 
@@ -44,13 +46,17 @@
             />
         </label>
     </div>
-    <div>
+    <div style="align-self:flex-end;">
         <button
             class="btn btn-active btn-ghost"
             on:click={async () => {
                 await submitForm();
-            }}>Save my To Do item</button
-        >
+                // these next two lines reload the page and display the newly added items on the todo list
+                location.reload();
+                return false;
+            }}
+            >Save my To Do item
+        </button>
     </div>
 </div>
 

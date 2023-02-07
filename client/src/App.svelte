@@ -9,6 +9,7 @@ import InputFields from "./components/InputFields.svelte";
 <InputFields />
 
 <DisplayList />
+
 <style global lang="postcss">
   @tailwind base;
   @tailwind components;

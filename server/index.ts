@@ -16,6 +16,7 @@ app.get("/todolist", (req, res)=>{
 app.post("/todolist", (req, res)=>{
     console.log(req.body)
     const toDos:ToDo[] = JSON.parse(fs.readFileSync('./todolist.json') as any as string);
+//    const toDos= [];
     const toDoItem = req.body.toDoItem;
     const dueDate = req.body.dueDate;
 

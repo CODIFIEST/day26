@@ -1,5 +1,1 @@
-{
-    "toDoItem":"clean the carpet",
-    "dueDate":"january 31 2024",
-    "isCompleted":false
-}
+[{"toDoItem":"clean the carpet","dueDate":"january 31 2024","isCompleted":false},{"toDoItem":"cpait the fence","dueDate":"january 22 2024","isCompleted":false},{"toDoItem":"sand da floor","dueDate":"march 22 2025","isCompleted":false},{"toDoItem":"i was gonna clean my room but then","dueDate":"jan 11 1999","isCompleted":false},{"toDoItem":"shaka khan","dueDate":"tomorrow","isCompleted":false},{"toDoItem":"fly a plane","dueDate":"next week","isCompleted":false},{"toDoItem":"what happens if i wait too long and write too many things on this column?","dueDate":"next year","isCompleted":false},{"toDoItem":"so it seems like it spreads the items out longer and longer until there is no more space available for any other tasks, then what?","dueDate":"may 2023","isCompleted":false},{"toDoItem":"and what about the next line?","dueDate":"tbd","isCompleted":false},{"toDoItem":"","dueDate":"","isCompleted":false},{"toDoItem":"need both","dueDate":"to save","isCompleted":false}]
