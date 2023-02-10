@@ -1,6 +1,7 @@
 type ToDo = {
     toDoItem:string,
     dueDate:string,
-    isCompleted:boolean
+    isCompleted:boolean,
+    id:string
 }
 export type {ToDo}

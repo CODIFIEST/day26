@@ -1,4 +1,6 @@
 <script lang="ts">
+
+
     import axios from "axios";
     let toDoItem: string = "";
     let dueDate: string = "";
@@ -11,7 +13,7 @@
                 dueDate: dueDate,
                 isCompleted: isCompleted,
             });
-            console.log(result);
+            console.log(result.data);
         }
     }
 </script>
@@ -23,7 +25,8 @@
         </label>
         <label class="input-group">
             <span>Task</span>
-            <input
+            <input 
+                required
                 bind:value={toDoItem}
                 type="text"
                 placeholder="Get up and find a broom"
@@ -39,8 +42,9 @@
         <label class="input-group">
             <span>Date</span>
             <input
+                required
                 bind:value={dueDate}
-                type="text"
+                type="date"
                 placeholder="Jan 12 1980"
                 class="input input-bordered"
             />
@@ -59,6 +63,7 @@
         </button>
     </div>
 </div>
+
 
 <style global lang="postcss">
     @tailwind base;
