@@ -1,3 +1,9 @@
+## Day28: Server-side Deployments
+
+# HOMEWORK:
+- Deploy your Todo list backedn to Vercel!
+Generate a tsconfig for your express server with npx tsc --init
+
 ## Day27
 Databases!
 Learned about our two main options:
