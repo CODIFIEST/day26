@@ -7,9 +7,9 @@ import type { ToDo } from "../domain/toDo";
 // import { initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
-import { getFirestore,deleteDoc, setDoc, doc, getDoc, getDocs, collection, addDoc } from "../node_modules/@firebase/firestore";
-import * as dotenv from '../node_modules/dotenv';
-import { initializeApp } from "../node_modules/@firebase/app/dist/app-public";
+import { getFirestore,deleteDoc, setDoc, doc, getDoc, getDocs, collection, addDoc } from "@firebase/firestore";
+import * as dotenv from 'dotenv';
+import { initializeApp } from "@firebase/app/dist/app-public";
 dotenv.config();
 const firebaseConfig = {
     apiKey: process.env.VITE_apikey,
