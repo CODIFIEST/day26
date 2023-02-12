@@ -2,7 +2,7 @@
 <script lang="ts">
     import {onMount} from "svelte"
     import {themeChange} from "theme-change"
-    import { currentTheme } from "../stores/currenttheme";
+    // import { currentTheme } from "../stores/currenttheme";
     onMount (() =>{
         themeChange(false)
     })
@@ -10,8 +10,8 @@
 
     }
     // import { currentTheme } from "./src/stores/currenttheme";
-currentTheme.set("forest");
-alert(`${$currentTheme}`);
+// currentTheme.set("forest");
+// alert(`${$currentTheme}`);
 </script>
 
 <div class="navbar bg-base-100">
