@@ -8,6 +8,7 @@ module.exports = {
     require("daisyui")
   ],
   daisyui: {
-    themes: ["forest"]
+    themes: [ `garden`, `forest`], //TODO how do I make this attached to a store?
+    //  darkTheme: 'media'
   }
 }

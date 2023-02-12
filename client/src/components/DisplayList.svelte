@@ -60,7 +60,7 @@
                 To Do: {toDo.toDoItem}
             </div>
             <div class="todo-line">
-                Due Date: {new Date(toDo.dueDate).toDateString().slice(0, 16)}
+                Due Date: {toDo.dueDate}  <!-- {new Date(toDo.dueDate).toDateString().slice(0, 16)} -->
             </div>
         </div>
         
@@ -100,7 +100,7 @@
                 To Do: {toDo.toDoItem}
             </div>
             <div class="todo-line-faded">
-                Due Date: {new Date(toDo.dueDate).toDateString().slice(0, 16)}
+                Due Date: {toDo.dueDate}  <!-- {new Date(toDo.dueDate).toDateString().slice(0, 16)} -->
             </div>
         </div>
         
