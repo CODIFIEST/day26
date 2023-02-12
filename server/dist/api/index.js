@@ -41,9 +41,9 @@ const cors_1 = __importDefault(require("cors"));
 // import { initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
-const firestore_1 = require("@firebase/firestore");
+const firestore_1 = require("firebase/firestore");
 const dotenv = __importStar(require("dotenv"));
-const app_public_1 = require("@firebase/app/dist/app-public");
+const app_1 = require("firebase/app");
 dotenv.config();
 // const firebaseConfig = {
 //     apiKey: process.env.VITE_apikey,
@@ -63,7 +63,7 @@ const firebaseConfig = {
 };
 // const firebaseConfig= process.env.VITE_firebaseConfig;
 // Initialize Firebase
-const todoapp = (0, app_public_1.initializeApp)(firebaseConfig);
+const todoapp = (0, app_1.initializeApp)(firebaseConfig);
 const database = (0, firestore_1.getFirestore)(todoapp);
 //express for server functions below----------
 const app = (0, express_1.default)();
