@@ -11,23 +11,15 @@ import { getFirestore,deleteDoc, setDoc, doc, getDoc, getDocs, collection, addDo
 import * as dotenv from 'dotenv';
 import { initializeApp } from "firebase/app";
 dotenv.config();
-// const firebaseConfig = {
-//     apiKey: process.env.VITE_apikey,
-//     authDomain: process.env.VITE_authDomain,
-//     projectId: process.env.VITE_projectId,
-//     storageBucket: process.env.VITE_storageBucket,
-//     messagingSenderId: process.env.VITE_messagingSenderId,
-//     appId: process.env.VITE_appId
-// };
 const firebaseConfig = {
-    apiKey: "AIzaSyDhHjhc56740EXC5JokTL1Q69MP1JV1qp4",
-authDomain: "day27-f9d4f.firebaseapp.com",
-projectId: "day27-f9d4f",
-storageBucket: "day27-f9d4f.appspot.com",
-messagingSenderId: "58144372448",
-appId: "1:58144372448:web:b440d02de95a616626c285"
+    apiKey: process.env.VITE_apikey,
+    authDomain: process.env.VITE_authDomain,
+    projectId: process.env.VITE_projectId,
+    storageBucket: process.env.VITE_storageBucket,
+    messagingSenderId: process.env.VITE_messagingSenderId,
+    appId: process.env.VITE_appId
+};
 
-}
 // const firebaseConfig= process.env.VITE_firebaseConfig;
 // Initialize Firebase
 const todoapp = initializeApp(firebaseConfig);
