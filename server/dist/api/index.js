@@ -42,16 +42,24 @@ const cors_1 = __importDefault(require("cors"));
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 const firestore_1 = require("@firebase/firestore");
-const dotenv = __importStar(require("../node_modules/dotenv"));
+const dotenv = __importStar(require("dotenv"));
 const app_public_1 = require("@firebase/app/dist/app-public");
 dotenv.config();
+// const firebaseConfig = {
+//     apiKey: process.env.VITE_apikey,
+//     authDomain: process.env.VITE_authDomain,
+//     projectId: process.env.VITE_projectId,
+//     storageBucket: process.env.VITE_storageBucket,
+//     messagingSenderId: process.env.VITE_messagingSenderId,
+//     appId: process.env.VITE_appId
+// };
 const firebaseConfig = {
-    apiKey: process.env.VITE_apikey,
-    authDomain: process.env.VITE_authDomain,
-    projectId: process.env.VITE_projectId,
-    storageBucket: process.env.VITE_storageBucket,
-    messagingSenderId: process.env.VITE_messagingSenderId,
-    appId: process.env.VITE_appId
+    apiKey: "AIzaSyDhHjhc56740EXC5JokTL1Q69MP1JV1qp4",
+    authDomain: "day27-f9d4f.firebaseapp.com",
+    projectId: "day27-f9d4f",
+    storageBucket: "day27-f9d4f.appspot.com",
+    messagingSenderId: "58144372448",
+    appId: "1:58144372448:web:b440d02de95a616626c285"
 };
 // const firebaseConfig= process.env.VITE_firebaseConfig;
 // Initialize Firebase
