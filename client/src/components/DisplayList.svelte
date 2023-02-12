@@ -7,7 +7,7 @@
     // import { doc, setDoc } from "firebase/firestore";
     let toDoList: ToDo[] = [];
     async function getToDos() {
-        const result = await axios.get("http://localhost:3000/todolist");
+        const result = await axios.get("https://day26-server.vercel.app/todolist");
         console.log("results", result.data);
         return result.data;
     }
@@ -16,14 +16,14 @@
         toDoList.sort((a, b) => a.dueDate.localeCompare(b.dueDate));
     });
     async function removeItem(id) {
-        const result = await axios.post("http://localhost:3000/removeitem", {
+        const result = await axios.post("https://day26-server.vercel.app/removeitem", {
             id: id,
         });
         location.reload();
         return false;
     }
     async function markCompleted(id) {
-       const result = await axios.post("http://localhost:3000/toggleCompleted", {
+       const result = await axios.post("https://day26-server.vercel.app/toggleCompleted", {
         id: id
        });
     }

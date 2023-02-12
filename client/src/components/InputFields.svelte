@@ -8,7 +8,7 @@
 
     async function submitForm() {
         if (toDoItem && dueDate) {
-            const result = await axios.post("http://localhost:3000/todolist", {
+            const result = await axios.post("https://day26-server.vercel.app/todolist", {
                 toDoItem: toDoItem,
                 dueDate: dueDate,
                 isCompleted: isCompleted,
